@@ -9,3 +9,4 @@ void AddData(Data* (&d), int& n);
 void DeleteData(Data* (&d), int& n);
 void SortingData(Data* d, int n);
 void SaveData(Data* d, int n, string fileName);
+void SaveDeactiveConfs(Data* d, int n, string fileName);

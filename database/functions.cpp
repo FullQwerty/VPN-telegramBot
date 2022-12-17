@@ -178,3 +178,23 @@ void SaveData(Data* d, int n, string fileName)
     cout << "Data saved in file: " << fileName << endl;
     record.close();
 }
+
+void SaveDeactiveConfs(Data* d, int n, string fileName)
+{
+    ofstream record(fileName);
+    if (record) {
+        record << n << endl;
+        for (int i = 0; i < n; i++){
+            if (d[i].GetInitials().state_active_cf == 0){
+                record << d[i].GetInitials().locate_conf_file << endl;
+                if (i < n - 1){
+                    record << endl;
+                }
+            }    
+        }
+    }else{
+        cout << "Error. Don't open file" << endl;
+    }
+    cout << "Data for deactive conf saved in file: " << fileName << endl;
+    record.close();
+}

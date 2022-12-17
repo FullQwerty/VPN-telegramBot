@@ -13,6 +13,7 @@ void Menu()
         << "(5) Remove data" << endl
         << "(6) Sort data for active state" << endl
         << "(7) Save data" << endl
+        << "(8) Save path for daective file" << endl
         << "Enter u move: ";
     cin >> _stateMenu;
 }
@@ -31,7 +32,7 @@ int main() {
         {
         case 1:
             system("clear");
-            cout << "Heand enter or read file data? : ";
+            cout << "Hand enter or read file data? : ";
             cin >> _actions;
 
             system("clear");
@@ -117,7 +118,19 @@ int main() {
 
                 SaveData(d, _size, fileName);
                 */
-               SaveData(d, _size, "./out.txt");
+               SaveData(d, _size, "../bot/conf_files/status_conf_files.txt");
+            }else{
+                cout << "No data" << endl;
+            }
+            sleep(2);
+            system("clear");
+            Menu();
+            break;
+
+        case 8:
+            system("clear");
+            if(_size!=0){
+                SaveDeactiveConfs(d, _size, "../bot/conf_files/deactive_conf_file.txt");
             }else{
                 cout << "No data" << endl;
             }
