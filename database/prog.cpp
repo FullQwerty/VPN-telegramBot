@@ -17,11 +17,6 @@ void Menu()
     cin >> _stateMenu;
 }
 
-void sys_pause()
-{
-    cin.get();
-}
-
 int main() {
     Menu();
     int _actions;
@@ -49,9 +44,9 @@ int main() {
                 cin >> fileName;
                 DataReading(d, _size, fileName);
                 */
-                DataReading(d, _size, "Input.txt");
+                DataReading(d, _size, "./input.txt");
             }
-            cin.get();
+            sleep(2);
             system("clear");
             Menu();
             break;
@@ -62,7 +57,7 @@ int main() {
                 Print(d, _size);
             else
                 cout << "No data" << endl;
-            cin.get();
+            sleep(2);
             system("clear");
             Menu();
             break;
@@ -73,7 +68,7 @@ int main() {
                 DataChange(d, _size);
             else
                 cout << "No data" << endl;
-            cin.get();
+            sleep(2);
             system("clear");
             Menu();
             break;
@@ -85,7 +80,7 @@ int main() {
             else
                 cout << "No data" << endl;
 
-            cin.get();
+            sleep(2);
             system("clear");
             Menu();
             break;
@@ -97,7 +92,7 @@ int main() {
             else
                 cout << "No data" << endl;
 
-            cin.get();
+            sleep(2);
             system("clear");
             Menu();
             break;
@@ -108,7 +103,7 @@ int main() {
             else
                 cout << "No data" << endl;
 
-            cin.get();
+            sleep(2);
             system("clear");
             Menu();
             break;
@@ -122,11 +117,11 @@ int main() {
 
                 SaveData(d, _size, fileName);
                 */
-               SaveData(d, _size, "Out.txt");
+               SaveData(d, _size, "./out.txt");
             }else{
                 cout << "No data" << endl;
             }
-            cin.get();
+            sleep(2);
             system("clear");
             Menu();
             break;
@@ -139,7 +134,7 @@ int main() {
         }
     }
     system("clear");
-    cin.get();
     cout << "Work complete" << endl;
+    sleep(2);
     return 0;
 }

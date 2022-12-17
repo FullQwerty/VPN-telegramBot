@@ -105,7 +105,7 @@ void AddData(Data* (&d), int& n)
 
     d[size].DataEntry(init_, date_);
     delete[]buf;
-    //delete[]d;
+    delete[]d;
 }
 
 void DeleteData(Data* (&d), int& n)
