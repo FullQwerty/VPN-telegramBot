@@ -1,1 +1,23 @@
-its help inf
+(EN)
+Steps to connect the configuration file for VPN:
+
+1. Download the configuration file to your device. From a chat with a bot.
+
+2. Go to the official website of "Wireguard" (https://www.wireguard.com/install/) and download,
+then install the application client (or configure in the case of linux systems).
+
+3. Add a configuration file to the application client.
+
+4. Launch the client.
+
+(RU)
+Шаги подключения конфигурационного файла для VPN:
+
+1. Скачать конфигурационный файл на ваше устройство. Из чата с ботом.
+
+2. Перейти на официальный сайт "Wireguard" (https://www.wireguard.com/install/) и скачать, 
+после чего установить клиент приложения (или настроить в случае с linux системами).
+
+3. Добавить конфигурационный файл в клиент приложения.
+
+4. Запустить клиент.

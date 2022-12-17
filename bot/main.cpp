@@ -12,7 +12,7 @@ vector<string>bot_commands = {"start"};
 
 int main() {
 
-    Bot bot("5915788521:AAEveMQhUVx2i1FxbXdL_DY86ZcXhke0V2U");
+    Bot bot("");
 
     InlineKeyboardMarkup::Ptr keyboard(new InlineKeyboardMarkup);
     vector<InlineKeyboardButton::Ptr> buttons;
